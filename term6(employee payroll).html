@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        class Employee {
+  constructor(id, name, position, salary) {
+    this.id = id;
+    this.name = name;
+    this.position = position;
+    this.salary = salary;
+  }
+
+  // Method to calculate the annual salary
+  calculateAnnualSalary() {
+    return this.salary * 12;
+  }
+
+  // Method to display employee information
+  displayEmployeeInfo() {
+    console.log(`Employee ID: ${this.id}`);
+    console.log(`Name: ${this.name}`);
+    console.log(`Position: ${this.position}`);
+    console.log(`Monthly Salary: $${this.salary}`);
+    console.log(`Annual Salary: $${this.calculateAnnualSalary()}`);
+    console.log('------------------------');
+  }
+}
+
+// Create instances of the Employee class
+const employee1 = new Employee(1, 'John Doe', 'Software Engineer', 5000);
+const employee2 = new Employee(2, 'Jane Smith', 'Marketing Specialist', 4500);
+const employee3 = new Employee(3, 'Bob Johnson', 'Sales Representative', 4800);
+
+// Display employee information
+employee1.displayEmployeeInfo();
+employee2.displayEmployeeInfo();
+employee3.displayEmployeeInfo();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
